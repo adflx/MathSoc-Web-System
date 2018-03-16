@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Math Society Login</title>
+		<link rel="stylesheet" type="text/css" src="login.css"/>
+		<script type="text/javascript" src="scripts.js"></script>
+	</head>
+	<body onload="hideForm('register')">
+		<div>
+			<form id="login" method="post">
+				<fieldset>
+					<legend>Math Society Officers' Login</legend>
+					Student ID Number: <input id="stunum" type="text" name="Idnum" required="required"/> <br/>
+					Password: <input id="pass" type="password" name="Pass" required="required"/> <br/>
+					<input type="submit" onclick="LoginButton()" name="Login" value="Log In"/>
+					<input type="button" onclick="SignUpButton()" name="Login" value="Sign Up"/>
+				</fieldset>
+			</form>
+			
+			<form id="register" method="post">
+				<fieldset>
+					<legend>Sign Up</legend>
+					Student ID Number: <input id="stunum2"type="text" name="Idnum" required="required"/> <br/>
+					Password: <input id="pass2" type="password" name="Pass" required="required"/>  <br/>
+					Full Name: <input id="fullname" type="text" name="fullName" required="required"/> <br/>
+					Course/Year/Section: <input id="cys" type="text" name="crsyrsec" required="required"/> <br/>
+					Position: <input id="pos" type="text" name="position" required="required"/> <br/>
+					<input type="submit" onclick="RegisterOfficer()" name="regbtn" value="Register"/>
+				</fieldset>
+			</form>
+			
+		</div>
+	</body>
+</html>
